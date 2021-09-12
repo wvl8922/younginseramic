@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Youngin Seramic</title>
+    <meta name="description" content="Youngin Seramic's internet shop">
+    <meta name="author" content="Ethan">
+    <!--사이트 로고 표시 하기-->
+    <link rel="icon" type="image/png" href="imgs/favicon.png">
+    <!--fontawesome 추가-->
+    <script src="https://kit.fontawesome.com/46ba064fae.js" crossorigin="anonymous"></script>
+    <!--google font 추가-->
+    <!-- font-family: 'Open Sans', sans-serif; -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <!--HTML이 pursuing이 다 완료된 상태에서 자바스크립트 파일을 실행하는 옵션 (defer)-->
+    <script src="main.js" defer></script>
+</head>
+
+<body>
+    <!-- Navbar -->
+    <div data-include-path="header.html"></div>
+    <script>
+        window.addEventListener('load', function() {
+            var allElements = document.getElementsByTagName('*');
+            Array.prototype.forEach.call(allElements, function(el) {
+                var includePath = el.dataset.includePath;
+                if (includePath) {
+                    var xhttp = new XMLHttpRequest();
+                    xhttp.onreadystatechange = function () {
+                        if (this.readyState == 4 && this.status == 200) {
+                            el.outerHTML = this.responseText;
+                        }
+                    };
+                    xhttp.open('GET', includePath, true);
+                    xhttp.send();
+                }
+            });
+        });
+    </script>
+    
+    <!-- <nav class="navbar">
+        <div class="navbar__logo">
+            <img src="imgs/faviconBlack.png" alt="">
+            <a href="#">Youngin Seramic</a>
+        </div>
+        <div>
+            <ul class="navbar__menu">
+                <li class="navbar__menu__item active">홈</li>
+                <li class="navbar__menu__item">SHOP</li>
+                <li class="navbar__menu__item">login</li>
+                <li class="navbar__menu__item">회원가입</li>
+                <li class="navbar__menu__item">장바구니</li>
+                <li class="navbar__menu__item">마이페이지</li>
+                <li class="navbar__menu__item">고객센터</li>
+            </ul>
+        </div>
+    </nav> -->
+
+        <!-- Home -->
+        <section class="home">
+            <img src="imgs/favicon.png" alt="youngin seramic logo" class="home__logo">
+            <h1 class="home__title">인테리어의 모든 것, 영인 세라믹</h1>
+            <h2 class="home__description">타일, 수전, 세면기부터 인테리어까지 전부 상담 및 시공해드립니다.</h2>
+            <button class="home__contact">상담신청 하기</button>
+        </section>
+
+
+        <!-- Work -->
+        <section class="work section section__Container">
+            <h1>주요 인테리어 사례</h1>
+            <p>영인세라믹에서 직접 시공한 인테리어 결과물입니다.</p>
+            <div class="work__majors">
+                <div class="major">
+                    <div class="major__picture"><img src="imgs/house design 1.jpg" alt=""></div>
+                    <h2 class="major__title">인테리어 사례1(부산)</h2>
+                    <div class="major__descriptiton">
+                        부산에서의 주요 인테리어 사례입니다.<br />총 시공비 : 1,000만원</div>
+                </div>
+                <div class="major">
+                    <div class="major__picture"><img src="imgs/house design 2.jpg" alt=""></div>
+                    <h2 class="major__title">인테리어 사례2(부산)</h2>
+                    <div class="major__descriptiton">부산에서의 주요 인테리어 사례입니다.<br />총 시공비 : 2,000만원</div>
+                </div>
+                <div class="major">
+                    <div class="major__picture"><img src="imgs/house design 3.jpg" alt=""></div>
+                    <h2 class="major__title">인테리어 사례3(서울)</h2>
+                    <div class="major__descriptiton">서울에서의 주요 인테리어 사례입니다.<br />총 시공비 : 3,000만원</div>
+                </div>
+                <div class="major">
+                    <div class="major__picture"><img src="imgs/emptyProject.png" alt=""></div>
+                    <h2 class="major__title">인테리어 사례4(추가예정)</h2>
+                    <div class="major__descriptiton">추가 예정입니다.<br />총 시공비 : X,XXX만원</div>
+                </div>
+                <div class="major">
+                    <div class="major__picture"><img src="imgs/emptyProject.png" alt=""></div>
+                    <h2 class="major__title">인테리어 사례5(추가예정)</h2>
+                    <div class="major__descriptiton">추가 예정입니다.<br />총 시공비 : X,XXX만원</div>
+                </div>
+                <div class="major">
+                    <div class="major__picture"><img src="imgs/emptyProject.png" alt=""></div>
+                    <h2 class="major__title">인테리어 사례6(추가예정)</h2>
+                    <div class="major__descriptiton">추가 예정입니다.<br />총 시공비 : X,XXX만원</div>
+                </div>
+
+            </div>
+        </section>
+</body>
+
+</html>

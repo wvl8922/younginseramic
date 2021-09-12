@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Youngin Seramic's OLINE SHOP</title>
+    <meta name="description" content="Youngin Seramic's internet shop">
+    <meta name="author" content="Ethan">
+    <!--사이트 로고 표시 하기-->
+    <link rel="icon" type="image/png" href="imgs/favicon.png">
+    <!--fontawesome 추가-->
+    <script src="https://kit.fontawesome.com/46ba064fae.js" crossorigin="anonymous"></script>
+    <!--google font 추가-->
+    <!-- font-family: 'Open Sans', sans-serif; -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styleShop.css">
+    <link rel="stylesheet" href="style.css">
+
+    <!--HTML이 pursuing이 다 완료된 상태에서 자바스크립트 파일을 실행하는 옵션 (defer)-->
+    <script src="main.js" defer></script>
+</head>
+<body>
+    <div data-include-path="header.html"></div>
+    <script>
+        window.addEventListener('load', function() {
+            var allElements = document.getElementsByTagName('*');
+            Array.prototype.forEach.call(allElements, function(el) {
+                var includePath = el.dataset.includePath;
+                if (includePath) {
+                    var xhttp = new XMLHttpRequest();
+                    xhttp.onreadystatechange = function () {
+                        if (this.readyState == 4 && this.status == 200) {
+                            el.outerHTML = this.responseText;
+                        }
+                    };
+                    xhttp.open('GET', includePath, true);
+                    xhttp.send();
+                }
+            });
+        });
+    </script>
+    <section class="Shop section section__Container">
+        <h1>영인 세라믹 온라인몰</h1>
+            <p>다양한 상품들을 집에서 받아보실 수 있습니다.</p>
+            <div class="items">
+                <div class="item">
+                    <div class="item__picture"><img src="imgs/tile1.jpg" alt=""></div>
+                    <h2 class="item__title">트윙클-논슬립(연회,진회) 논슬립자기질타일</h2>
+                    <div class="item__descriptiton">
+                        200x200mm<br />바닥타일/박스판매<br />18,000원</div>
+                </div>
+                <div class="item">
+                    <div class="item__picture"><img src="imgs/tile1.jpg" alt=""></div>
+                    <h2 class="item__title">북유럽타일 핸드메이드타일</h2>
+                    <div class="item__descriptiton">
+                        95mm<br />낱장 모자이크 타입 중 선택<br />700원</div>
+                </div>
+                <div class="item">
+                    <div class="item__picture"><img src="imgs/tile2.jpg" alt=""></div>
+                    <h2 class="item__title">정사각유광핑크</h2>
+                    <div class="item__descriptiton">
+                        200x200mm<br />바닥타일/박스판매<br />15,000원</div>
+                </div>
+                <div class="item">
+                    <div class="item__picture"><img src="imgs/tile3.jpg" alt=""></div>
+                    <h2 class="item__title">북유럽 자기질 타일</h2>
+                    <div class="item__descriptiton">
+                        200x200mm<br />바닥타일/박스판매<br />18,000원</div>
+                </div>
+                <div class="item">
+                    <div class="item__picture"><img src="imgs/tile4.jpg" alt=""></div>
+                    <h2 class="item__title">북유럽 자기질 타일</h2>
+                    <div class="item__descriptiton">
+                        200x200mm<br />바닥타일/박스판매<br />18,000원</div>
+                </div>
+                <div class="item">
+                    <div class="item__picture"><img src="imgs/tile5.jpg" alt=""></div>
+                    <h2 class="item__title">북유럽 자기질 타일</h2>
+                    <div class="item__descriptiton">
+                        200x200mm<br />바닥타일/박스판매<br />18,000원</div>
+                </div>
+                <div class="item">
+                    <div class="item__picture"><img src="imgs/tile6.jpg" alt=""></div>
+                    <h2 class="item__title">트윙클-논슬립(연회,진회) 논슬립자기질타일</h2>
+                    <div class="item__descriptiton">
+                        200x200mm<br />바닥타일/박스판매<br />18,000원</div>
+                </div>
+                <div class="item">
+                    <div class="item__picture"><img src="imgs/tile1.jpg" alt=""></div>
+                    <h2 class="item__title">북유럽타일 핸드메이드타일</h2>
+                    <div class="item__descriptiton">
+                        95mm<br />낱장 모자이크 타입 중 선택<br />700원</div>
+                </div>
+                <div class="item">
+                    <div class="item__picture"><img src="imgs/tile2.jpg" alt=""></div>
+                    <h2 class="item__title">정사각유광핑크</h2>
+                    <div class="item__descriptiton">
+                        200x200mm<br />바닥타일/박스판매<br />15,000원</div>
+                </div>
+                <div class="item">
+                    <div class="item__picture"><img src="imgs/tile3.jpg" alt=""></div>
+                    <h2 class="item__title">북유럽 자기질 타일</h2>
+                    <div class="item__descriptiton">
+                        200x200mm<br />바닥타일/박스판매<br />18,000원</div>
+                </div>
+                <div class="item">
+                    <div class="item__picture"><img src="imgs/tile4.jpg" alt=""></div>
+                    <h2 class="item__title">북유럽 자기질 타일</h2>
+                    <div class="item__descriptiton">
+                        200x200mm<br />바닥타일/박스판매<br />18,000원</div>
+                </div>
+                <div class="item">
+                    <div class="item__picture"><img src="imgs/tile5.jpg" alt=""></div>
+                    <h2 class="item__title">북유럽 자기질 타일</h2>
+                    <div class="item__descriptiton">
+                        200x200mm<br />바닥타일/박스판매<br />18,000원</div>
+                </div>
+                <div class="item">
+                    <div class="item__picture"><img src="imgs/tile6.jpg" alt=""></div>
+                    <h2 class="item__title">북유럽 자기질 타일</h2>
+                    <div class="item__descriptiton">
+                        200x200mm<br />바닥타일/박스판매<br />18,000원</div>
+                </div>
+            </div>
+    </section>
+</script>
+</body>
+</html>

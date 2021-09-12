@@ -1,0 +1,289 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ethan's portfolio</title>
+    <meta name="description" content="Portfolio for world-renowned software engineer">
+    <meta name="author" content="Ethan">
+    <!--사이트 로고 표시 하기-->
+    <link rel="icon" type="image/png" href="imgs/favicon.png" />
+    <!--fontawesome 추가-->
+    <script src="https://kit.fontawesome.com/46ba064fae.js" crossorigin="anonymous"></script>
+    <!--google font 추가-->
+    <!-- font-family: 'Open Sans', sans-serif; -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <!--HTML이 pursuing이 다 완료된 상태에서 자바스크립트 파일을 실행하는 옵션 (defer)-->
+    <script src="main.js" defer></script>
+</head>
+
+<body>
+    <!-- Navbar -->
+    <nav id="navbar">
+        <div class="navbar__logo">
+            <img src="imgs/favicon.png" alt="">
+            <a href="#">Ethan</a>
+        </div>
+        <div>
+            <ul class="navbar__menu">
+                <li class="navbar__menu__item active">Home</li>
+                <li class="navbar__menu__item">About</li>
+                <li class="navbar__menu__item">Skills</li>
+                <li class="navbar__menu__item">My work</li>
+                <li class="navbar__menu__item">Testimonial</li>
+                <li class="navbar__menu__item">Contact</li>
+            </ul>
+        </div>
+
+<!-- Toggle button -->
+<button class="navbar__toggle-btn">
+    <i class="fas fa-bars"></i>
+</button>
+
+    </nav>
+
+    <!-- Home -->
+    <section id="home">
+        <img src="imgs/myPicture.jpg" alt="Ethan's profile photo" class="home__avatar">
+        <h1 class="home__title">Hello, <br />I'm Dream Coder</h1>
+        <h2 class="home__description">A Software Engineer currently residing in Sydney, Australia.</h2>
+        <button class="home__contact">CONTACT ME</button>
+    </section>
+
+    <!-- About -->
+    <section id="about" class="section section__contatiner">
+        <h1>About me</h1>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Facere, blanditiis
+            sunt. Quos ab illum animi
+            quidem. Harum ipsam, eius consectetur inventore officiis a laboriosam recusandae? Harum consequuntur
+            eaque accusamus tempora.</p>
+        <div class="about__majors">
+            <div class="major">
+                <div class="major__icon"><i class="fab fa-html5"></i></div>
+                <h2 class="major__title">Front-end</h2>
+                <div class="major__descriptiton">HTML,CSS,JavaScript,TypeScript,<br />React,Vue,Web APIs</div>
+            </div>
+            <div class="major">
+                <div class="major__icon"><i class="fab fa-html5"></i></div>
+                <h2 class="major__title">Front-end</h2>
+                <div class="major__descriptiton">HTML,CSS,JavaScript,TypeScript,<br />React,Vue,Web APIs</div>
+            </div>
+            <div class="major">
+                <div class="major__icon"><i class="fab fa-html5"></i></div>
+                <h2 class="major__title">Front-end</h2>
+                <div class="major__descriptiton">HTML,CSS,JavaScript,TypeScript,<br />React,Vue,Web APIs</div>
+            </div>
+        </div>
+        <div class="about__jobs">
+            <div class="job">
+                <img src="imgs/jobs/samsungLogo.png" alt="samsung" class="job__logo">
+                <div class="job__description">
+                    <p class="job__name">Canon</p>
+                    <p class="job__period">'2021.10.01~</p>
+                </div>
+            </div>
+            <div class="job">
+                <img src="imgs/jobs/samsungLogo.png" alt="samsung" class="job__logo">
+                <div class="job__description">
+                    <p class="job__name">samsung</p>
+                    <p class="job__period">'2021.10.01~</p>
+                </div>
+            </div>
+        </div>
+        </div>
+    </section>
+
+
+    <!-- Skills -->
+    <section id="skills" class="section">
+        <div class="section__Container">
+            <h1>Skills</h1>
+            <h2>Skills & Attribute</h2>
+            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Voluptatem ducimus in assumenda provident
+                excepturi, fugit quaerat delectus voluptas eaque quae dicta consequatur ex quam tenetur debitis ratione.
+                Molestias, doloremque voluptate!</p>
+            <div class="skillset">
+                <div class="skillset__left">
+                    <h3 class="skillset__title">Skills</h3>
+                    <div class="skill">
+                        <div class="skill__description">
+                            <span>HTML</span>
+                            <span>99%</span>
+                        </div>
+                        <div class="skill__bar">
+                            <div class="skill__value" style="width: 99%;"></div>
+                        </div>
+                    </div>
+                    <div class="skill">
+                        <div class="skill__description">
+                            <span>CSS</span>
+                            <span>80%</span>
+                        </div>
+                        <div class="skill__bar">
+                            <div class="skill__value" style="width: 80%;"></div>
+                        </div>
+                    </div>
+                    <div class="skill">
+                        <div class="skill__description">
+                            <span>JAVASCRIPT</span>
+                            <span>50%</span>
+                        </div>
+                        <div class="skill__bar">
+                            <div class="skill__value" style="width: 50%;"></div>
+                        </div>
+
+                    </div>
+                    <div class="skill">
+                        <div class="skill__description">
+                            <span>JAVA</span>
+                            <span>100%</span>
+                        </div>
+                        <div class="skill__bar">
+                            <div class="skill__value" style="width: 100%;"></div>
+                        </div>
+
+                    </div>
+                    <div class="skill">
+                        <div class="skill__description">
+                            <span>REACT</span>
+                            <span>0%</span>
+                        </div>
+                        <div class="skill__bar">
+                            <div class="skill__value" style="width: 0%;"></div>
+                        </div>
+
+                    </div>
+                </div>
+                <div class="skillset__right">
+                    <div class="tools">
+                        <h3 class="skillset__title">Tools</h3>
+                        <ul class="tools__list">
+                            <li><span>Visual Studio Code</span></li>
+                            <li><span>IntelliJ</span></li>
+                            <li><span>Android Studio Code</span></li>
+                            <li><span>ios development tools</span></li>
+                            <li><span>Sketch app</span></li>
+                        </ul>
+                    </div>
+                    <div class="etc">
+                        <h3 class="skillset__title">etc</h3>
+                        <ul class="etc__list">
+                            <li><span>git</span></li>
+                            <li><span>Scrum master</span></li>
+                            <li><span>Math</span></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+    </section>
+    </div>
+
+
+    <!-- Work -->
+    <section id="work" class="section">
+        <div class="section__Container">
+            <h1>My work</h1>
+            <h3>projects</h3>
+            <div class="work__categories">
+                <button class="category__btn active">All<span class="category__count">8</span> </button>
+                <button class="category__btn">Front-end<span class="category__count">3</span> </button>
+                <button class="category__btn">Back-end<span class="category__count">5</span> </button>
+                <button class="category__btn">Mobile<span class="category__count">7</span></button>
+            </div>
+            <div class="work__projects">
+                <a href="" class="project" target="blank">
+                    <img class="project__img" src="imgs/projects/수민이네 집.png" alt="LogoProject">
+                    <div class="project__description">
+                        <h3>Youtube Site</h3>
+                        <span>Clone coding with HTML and CSS</span>
+                    </div>
+                </a>
+                <a href="" class="project" target="blank">
+                    <img class="project__img" src="imgs/projects/수민이네 집.png" alt="LogoProject">
+                    <div class="project__description">
+                        <h3>Youtube Site</h3>
+                        <span>Clone coding with HTML and CSS</span>
+                    </div>
+                </a>
+                <a href="" class="project" target="blank">
+                    <img class="project__img" src="imgs/projects/수민이네 집.png" alt="LogoProject">
+                    <div class="project__description">
+                        <h3>Youtube Site</h3>
+                        <span>Clone coding with HTML and CSS</span>
+                    </div>
+                </a>
+                <a href="" class="project" target="blank">
+                    <img class="project__img" src="imgs/projects/수민이네 집.png" alt="LogoProject">
+                    <div class="project__description">
+                        <h3>Youtube Site</h3>
+                        <span>Clone coding with HTML and CSS</span>
+                    </div>
+                </a>
+                <a href="" class="project" target="blank">
+                    <img class="project__img" src="imgs/projects/수민이네 집.png" alt="LogoProject">
+                    <div class="project__description">
+                        <h3>Youtube Site</h3>
+                        <span>Clone coding with HTML and CSS</span>
+                    </div>
+                </a>
+                <a href="" class="project" target="blank">
+                    <img class="project__img" src="imgs/projects/수민이네 집.png" alt="LogoProject">
+                    <div class="project__description">
+                        <h3>Youtube Site</h3>
+                        <span>Clone coding with HTML and CSS</span>
+                    </div>
+                </a>
+
+            </div>
+        </div>
+    </section>
+    <!-- Testimonials -->
+
+    <section id="testimonials" class="section">
+        <div class="section__Container">
+            <h1>Testimonials</h1>
+            <h3>See what they say about me</h3>
+            <div class="testimonials">
+                <div class="testimonial">
+                    <img src="imgs/testimonials/people.jpg" alt="People" class="testimonial__avatar">
+                    <div class="testimonial__speech-bubble">
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Alias similique nam, nemo laboriosam
+                            nisi pariatur voluptas culpa adipisci sed cumque necessitatibus voluptatum. Neque aperiam
+                            doloribus totam commodi, vel deserunt? Cum.</p>
+                        <p class="name"><a href=" ">Ellie</a>/ Samsung</p>
+                    </div>
+                </div>
+                <div class="testimonial">
+                    <div class="testimonial__speech-bubble">
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Alias similique nam, nemo laboriosam
+                            nisi pariatur voluptas culpa adipisci sed cumque necessitatibus voluptatum. Neque aperiam
+                            doloribus totam commodi, vel deserunt? Cum.</p>
+                        <p class="name"><a href=" ">Ellie</a>/ Samsung</p>
+                    </div>
+                    <img src="imgs/testimonials/people.jpg" alt="People" class="testimonial__avatar">
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <!-- Contact -->
+    <section id="Contact" class="section">
+        <h1 class="contact__title">Let's talk</h1>
+        <h2 class="contact__email">dream.coder.ellie@gamil.com</h2>
+        <div class="contact__links">
+            <a href=""><i class="fab fa-github"></i></a>
+            <a href=""><i class="fab fa-linkedin"></i></a>
+        </div>
+        <p class="contact__rights">2021 Dream Coding Ellie - ALL rights reserved</p>
+    </section>
+    <header>
+
+</body>
+
+</html>
